@@ -6,3 +6,4 @@ __pycache__/
 *.pyz
 .pytest_cache/
 dist/
+.env
