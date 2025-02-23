@@ -48,8 +48,8 @@ class SearchToolbox(BaseToolbox):
     """
     A toolbox for searching the web.
     """
-    google_search = GoogleSearchTool()
     bing_search = BingSearchTool()
+    google_search = GoogleSearchTool()
 
     def __init__(self, *args, **kwargs) -> None:
         super().__init__(*args, **kwargs)
