@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "llmrepo"
+version = "0.1.0"
+authors = [
+    { name = "Richard Buckley", email = "rhbuckley@pm.me" },
+]
+license-files = ["LICENSE"]
+description = "A package for building and managing tools for Large Language Models"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Build Tools",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = ["pydantic>=2.0.0"]
+
+[project.optional-dependencies]
+dev = ["check-manifest"]
+test = [    
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.22.0"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/rhbuckley/llmrepo"
+"Source" = "https://github.com/rhbuckley/llmrepo"
+"Bug Tracker" = "https://github.com/rhbuckley/llmrepo/issues" 
